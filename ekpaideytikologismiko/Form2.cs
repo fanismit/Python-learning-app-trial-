@@ -21,7 +21,7 @@ namespace ekpaideytikologismiko
         private void Form2_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
-            var email = new MailAddress("abc123@example.com");
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
