@@ -8,7 +8,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//using System.Speech.Synthesis;
 namespace ekpaideytikologismiko
 {
     public partial class Form2 : Form
@@ -21,7 +21,8 @@ namespace ekpaideytikologismiko
         private void Form2_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
-            
+            //var synthesizer = new SpeechSynthesizer();
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -36,8 +37,10 @@ namespace ekpaideytikologismiko
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            
+            this.Hide();
+            Form3 menu = new Form3();
+            menu.Show();
+
         }
     }
 }
